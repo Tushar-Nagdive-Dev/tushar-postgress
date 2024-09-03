@@ -1,0 +1,133 @@
+List of relations
+-[ RECORD 1 ]----------
+Schema | public
+Name   | caption_tags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 2 ]----------
+Schema | public
+Name   | comments
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 3 ]----------
+Schema | public
+Name   | followers
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 4 ]----------
+Schema | public
+Name   | hashtags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 5 ]----------
+Schema | public
+Name   | hashtags_posts
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 6 ]----------
+Schema | public
+Name   | likes
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 7 ]----------
+Schema | public
+Name   | photo_tags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 8 ]----------
+Schema | public
+Name   | posts
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 9 ]----------
+Schema | public
+Name   | users
+Type   | table
+Owner  | tusharnagdive
+
+List of relations
+-[ RECORD 1 ]----------
+Schema | public
+Name   | caption_tags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 2 ]----------
+Schema | public
+Name   | comments
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 3 ]----------
+Schema | public
+Name   | followers
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 4 ]----------
+Schema | public
+Name   | hashtags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 5 ]----------
+Schema | public
+Name   | hashtags_posts
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 6 ]----------
+Schema | public
+Name   | likes
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 7 ]----------
+Schema | public
+Name   | photo_tags
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 8 ]----------
+Schema | public
+Name   | posts
+Type   | table
+Owner  | tusharnagdive
+-[ RECORD 9 ]----------
+Schema | public
+Name   | users
+Type   | table
+Owner  | tusharnagdive
+
+List of databases
+-[ RECORD 1 ]-----+--------------------------------
+Name              | data_set_practice
+Owner             | tusharnagdive
+Encoding          | UTF8
+Collate           | C
+Ctype             | C
+Access privileges | 
+-[ RECORD 2 ]-----+--------------------------------
+Name              | instagram
+Owner             | tusharnagdive
+Encoding          | UTF8
+Collate           | C
+Ctype             | C
+Access privileges | 
+-[ RECORD 3 ]-----+--------------------------------
+Name              | postgres
+Owner             | tusharnagdive
+Encoding          | UTF8
+Collate           | C
+Ctype             | C
+Access privileges | 
+-[ RECORD 4 ]-----+--------------------------------
+Name              | template0
+Owner             | tusharnagdive
+Encoding          | UTF8
+Collate           | C
+Ctype             | C
+Access privileges | =c/tusharnagdive               +
+                  | tusharnagdive=CTc/tusharnagdive
+-[ RECORD 5 ]-----+--------------------------------
+Name              | template1
+Owner             | tusharnagdive
+Encoding          | UTF8
+Collate           | C
+Ctype             | C
+Access privileges | =c/tusharnagdive               +
+                  | tusharnagdive=CTc/tusharnagdive
+
