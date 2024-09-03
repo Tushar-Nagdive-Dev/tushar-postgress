@@ -1,5 +1,25 @@
 {
+  "name": "postgresql",
+  "version": "1.0.0",
+  "description": "pg-sql.com <-  tool to get a free postgres database + run some queries",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node-pg-migrate",
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down"
+  },
+  "node-pg-migrate": {
+    "migrations": {
+      "databaseUrl": "postgres://tusharnagdive@localhost:5432/social_network_mig",
+      "directory": "migrations",
+      "pattern": "*.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "node-pg-migrate": "^7.6.1"
+    "node-pg-migrate": "^7.6.1",
+    "pg": "^8.12.0"
   }
 }

@@ -229,3 +229,8 @@ By maintaining this document, you ensure that the database schema changes are we
 ---
 
 Feel free to modify this template as needed to fit your specific use case and project requirements!
+
+# Manual command for run migration
+`DATABASE_URL=postgres://tusharnagdive@localhost:5432/social_network_mig npm run migrate up`
+
+

@@ -896,3 +896,54 @@ DROP MATERIALIZED VIEW total_sales;
 - They are ideal for scenarios where query performance is crucial, and the underlying data doesn't change too frequently.
 
 By using materialized views, you can achieve faster query response times, especially for reporting and analytics purposes.
+
+Yes, you can configure `node-pg-migrate` through your `package.json` file. This approach can be convenient as it keeps all your project configuration in one place. Here’s how you can set it up:
+
+### 1. **Add a `node-pg-migrate` Configuration to `package.json`**
+
+You can include a `node-pg-migrate` configuration section directly in your `package.json` file. Here’s an example of how you might do it:
+
+**`package.json` Example:**
+```json
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "scripts": {
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down"
+  },
+  "node-pg-migrate": {
+    "databaseUrl": "postgres://user:password@localhost:5432/your-database",
+    "migrations": {
+      "directory": "migrations",
+      "pattern": "*.js"
+    }
+  }
+}
+```
+
+### 2. **Run Migrations Using npm Scripts**
+
+With the configuration in `package.json`, you can run migrations using npm scripts. For example:
+
+- To apply migrations:
+  ```bash
+  npm run migrate:up
+  ```
+
+- To roll back migrations:
+  ```bash
+  npm run migrate:down
+  ```
+
+### 3. **Use Configuration from `package.json`**
+
+`node-pg-migrate` will automatically pick up the configuration from `package.json` if you include the `node-pg-migrate` key in the configuration. This is useful for maintaining all configurations within the `package.json` file without needing separate configuration files.
+
+### Additional Configuration Options
+
+Depending on your needs, you can add additional configuration options within the `node-pg-migrate` key, such as specifying different directories for migrations or setting up specific database connection settings.
+
+### Summary
+
+Using `package.json` to configure `node-pg-migrate` can streamline your setup and keep your project configuration centralized. Just make sure to define the `node-pg-migrate` section with the necessary details for your migration needs.
